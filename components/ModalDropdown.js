@@ -194,7 +194,7 @@ export default class ModalDropdown extends Component {
     let windowWidth = dimensions.width;
     let windowHeight = dimensions.height;
 
-    let dropdownHeight = (this.props.dropdownStyle && StyleSheet.flatten(this.props.dropdownStyle.height)) ||
+    let dropdownHeight = (this.props.dropdownStyle && StyleSheet.flatten(this.props.dropdownStyle).height) ||
       StyleSheet.flatten(styles.dropdown).height;
 
     let bottomSpace = windowHeight - this._buttonFrame.y - this._buttonFrame.h;
